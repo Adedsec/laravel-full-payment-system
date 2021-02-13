@@ -38,7 +38,6 @@ class Transaction
 
             $order->generateInvoice();
 
-            dd('invoice');
 
             $payment = $this->makePayment($order);
 

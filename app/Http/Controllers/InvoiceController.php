@@ -14,7 +14,6 @@ class InvoiceController extends Controller
 
     public function show(Order $order)
     {
-
-        $order->downloadInvoice();
+        return $order->downloadInvoice();
     }
 }

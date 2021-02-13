@@ -29,13 +29,12 @@ class Order extends Model
     public function generateInvoice()
     {
 
-        $config = ['instanceConfigurator' => function ($mpdf) {
-            $mpdf->SetDisplayMode(90);
-        }];
-        $pdf = \PDF::loadView('orders.invoice', [
-            'order' => $this
-        ], $config);
-        return $pdf->save(storage_path('app/public/invoices') . $this->id . '.pdf');
+//        $config = ['instanceConfigurator' => function ($mpdf) {
+//            $mpdf->SetDisplayMode('none');
+//
+//        }];
+        $pdf = \PDF::loadView('orders.invoice', ['order' => $this], [], ['display_mode' => 'fullpage']);
+        return $pdf->save(storage_path('app/public/invoices/') . $this->id . '.pdf');
     }
 
     public function paid()
