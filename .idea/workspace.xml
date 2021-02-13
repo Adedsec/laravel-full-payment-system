@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="067172df-4295-4a59-a458-0d6a7eace092" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InvoiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InvoiceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Support/Payment/Transaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Support/Payment/Transaction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/pdf.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/pdf.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +164,7 @@
       <workItem from="1612589728059" duration="402000" />
       <workItem from="1612590278981" duration="174000" />
       <workItem from="1612630807253" duration="3000" />
-      <workItem from="1613219556353" duration="2548000" />
+      <workItem from="1613219556353" duration="2727000" />
     </task>
     <servers />
   </component>
