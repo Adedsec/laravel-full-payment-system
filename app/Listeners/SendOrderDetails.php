@@ -23,7 +23,7 @@ class SendOrderDetails
     /**
      * Handle the event.
      *
-     * @param  OrderRegistered  $event
+     * @param OrderRegistered $event
      * @return void
      */
     public function handle(OrderRegistered $event)

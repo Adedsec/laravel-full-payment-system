@@ -60,6 +60,11 @@ class Transaction
         return $order;
     }
 
+    public function pay(Order $order)
+    {
+        return $this->gatewayFactory()->pay($order, $order->payment->amount);
+    }
+
     public function verify()
     {
         $result = $this->gatewayFactory()->verify($this->request);
@@ -96,6 +101,8 @@ class Transaction
 
     private function gatewayFactory()
     {
+        if (!$this->request->has('gateway')) return resolve(Saman::class);
+
         $gateway = [
             'saman' => Saman::class,
             'passargad' => Passargad::class

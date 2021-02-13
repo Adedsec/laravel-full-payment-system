@@ -23,7 +23,7 @@
                         <td>{{$order->created_at}}</td>
                         <td colspan="4">
                             @if (! $order->paid())
-                                <a class="btn btn-primary btn-sm" href="">
+                                <a class="btn btn-primary btn-sm" href="{{route('order.pay',$order->id)}}">
                                     پرداخت
                                 </a>
                             @endif

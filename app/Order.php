@@ -34,7 +34,7 @@ class Order extends Model
 //
 //        }];
         $pdf = \PDF::loadView('orders.invoice', ['order' => $this], [], ['display_mode' => 'fullpage']);
-        return $pdf->save(storage_path('app/public/invoices/') . $this->id . '.pdf');
+        return $pdf->save($this->invoicePath());
     }
 
     public function paid()
@@ -45,5 +45,10 @@ class Order extends Model
     public function downloadInvoice()
     {
         return Storage::disk('public')->download('invoices/' . $this->id . '.pdf');
+    }
+
+    public function invoicePath()
+    {
+        return storage_path('app/public/invoices/') . $this->id . '.pdf';
     }
 }

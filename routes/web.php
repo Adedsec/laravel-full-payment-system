@@ -37,6 +37,7 @@ Route::get('coupon', 'CouponController@remove')->name('coupons.remove');
 
 Route::get('orders', 'OrderController@index')->name('orders');
 Route::get('invoice/{order}', 'InvoiceController@show')->name('invoice.show');
+Route::get('orders/pay/{order}', 'OrderController@pay')->name('order.pay');
 
 
 Route::get('basket/clear', function () {
